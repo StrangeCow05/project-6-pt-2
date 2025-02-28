@@ -8,3 +8,6 @@ delstudents(students vector)
 menu()
 
 
+open and read in student.csv file
+for each line 
+

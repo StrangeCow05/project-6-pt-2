@@ -1,5 +1,5 @@
 #ifndef DATE_H_EXISTS
-#define DATE_H_EXTSTS
+#define DATE_H_EXISTS
 
 #include <string>
 
