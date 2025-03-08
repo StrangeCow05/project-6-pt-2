@@ -35,10 +35,6 @@ void Student::init(std::string studentString){
 	 std::string sZip;
 	 std::string sCreditHours;
 
-	 //Student::firstName;
-	 //Student::lastName;
-	 //Student::creditHours;
-
 	 converter.clear();
 	 converter.str(studentString);
 
