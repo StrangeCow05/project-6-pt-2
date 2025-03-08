@@ -1,5 +1,5 @@
-game: address.o date.o main.o
-	g++ -g address.o date.o main.o -o game
+heap: address.o date.o main.o
+	g++ -g address.o date.o main.o -o heap
 
 main.o: address.h date.h main.cpp
 	g++ -c -g main.cpp
@@ -13,15 +13,15 @@ date.o: date.h date.cpp
 student.o: address.h date.h student.h student.cpp
 	g++ -c -g student.cpp
 
-run: game
-	./game
+run: heap
+	./heap
 
-debug: game
-	gdb game
+debug: heap
+	gdb heap
 
-valgrind: game
-	valgrind ./game
+valgrind: heap
+	valgrind ./heap
 
 clean:
 	rm *.o
-	rm game
+	rm heap

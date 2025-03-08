@@ -60,15 +60,6 @@ void Student::init(std::string studentString){
 
 	 getline(converter, sCreditHours);
 	 
-	 
-	 converter.clear();
-	 converter.str(firstName);
-	 converter >> Student::firstName;
-
-	 converter.clear();
-	 converter.str(lastName);
-	 converter >> Student::lastName;
-
 	 address->init(sStreet, sTown, sState, sZip);
 			
 	 converter.clear();
