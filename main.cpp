@@ -1,21 +1,27 @@
 #include <iostream>
+#include <vector>
+#include <fstream>
+#include <sstream>
 #include "student.h"
 #include "date.h"
 #include "address.h"
 
 
-void testAddress();
-void testDate();
-void testStudent();
+//void testAddress();
+//void testDate();
+//void testStudent();
 
 int main(){
-  std::cout << "Hello!" << std::endl;
-  testAddress();
-  testDate();
-  testStudent();
+  std::string currentLine;	
+  //read in file 
+  inFile.open("students.csv");
+  
+  
+  
+  inFile.close();//close file 
   return 0;
 } // end main
-
+/*
 void testAddress(){
   Address a;
   a.init("123 W Main St", "Muncie", "IN", "47303");
@@ -37,3 +43,4 @@ void testStudent(){
   std::cout << student->getLastFirst() << std::endl;
   delete student;
 } // end testStudent
+*/
