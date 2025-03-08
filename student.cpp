@@ -38,6 +38,7 @@ void Student::init(std::string studentString){
 	 converter.clear();
 	 converter.str(studentString);
 
+
 	 getline(converter, firstName, ',');
 
 	 getline(converter, lastName, ',');
@@ -58,6 +59,14 @@ void Student::init(std::string studentString){
 	 
 	 address->init(sStreet, sTown, sState, sZip);
 			
+	 converter.clear();
+	 converter.str(firstName);
+	 converter >> Student::firstName;
+
+	 converter.clear();
+	 converter.str(lastName);
+	 converter >> Student::lastName;
+
 	 converter.clear();
 	 converter.str(sBirth);
 	 birth->init(sBirth);
